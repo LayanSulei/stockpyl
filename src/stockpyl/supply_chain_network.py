@@ -1080,6 +1080,7 @@ def network_from_edges(edges, node_order_in_lists=None, **kwargs):
 		n.stockout_cost_function = data_dict[n.index].get('stockout_cost_function')
 		n.purchase_cost = data_dict[n.index].get('purchase_cost')
 		n.fixed_cost = data_dict[n.index].get('fixed_cost')
+		n.fixed_cost_function = data_dict[n.index].get('fixed_cost_function')
 		n.revenue = data_dict[n.index].get('revenue')
 		if data_dict[n.index].get('shipment_lead_time') is not None:
 			n.shipment_lead_time = data_dict[n.index].get('shipment_lead_time')
