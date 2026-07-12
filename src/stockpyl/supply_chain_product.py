@@ -480,8 +480,8 @@ class SupplyChainProduct(object):
 				self.disruption_process = disruption_process.DisruptionProcess()
 			elif attr == '_inventory_policy':
 				self.inventory_policy = policy.Policy()
-			elif attr == '_inventory_capacity_type':
-				self.inventory_capacity_type = inventory_capacity.InventoryCapacity()
+			elif attr == '_inventory_capacity':
+				self.inventory_capacity = inventory_capacity.InventoryCapacity()
 			elif is_list(self._DEFAULT_VALUES[attr]) or is_dict(self._DEFAULT_VALUES[attr]):
 				setattr(self, attr, copy.deepcopy(self._DEFAULT_VALUES[attr]))
 			else:

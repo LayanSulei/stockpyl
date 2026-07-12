@@ -770,77 +770,7 @@ Test that sum_of_discretes_distribution() returns correct result. ... ok
 test_example_4_2 (tests.test_instances.LoadInstance)
 Test that load_instance() correctly loads Example 6.1. ... ok
 test_example_6_1 (tests.test_instances.LoadInstance)
-Test that load_instance() correctly loads Example 6.1. ... FAIL
-test_example_9_5 (tests.test_instances.LoadInstance)
-Test that load_instance() correctly loads Example 9.5. ... ok
-test_figure_6_14 (tests.test_instances.LoadInstance)
-Test that load_instance() correctly loads Figure 6.14. ... ok
-test_example_4_2 (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves Example 6.1. ... ok
-test_example_6_1 (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves Example 6.1. ... ok
-test_example_6_1_with_order_capacity (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves Example 6.1 with a few order capacities. ... ok
-test_example_9_5 (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves Example 9.5. ... ok
-test_figure_6_14 (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves Figure 6.14. ... ok
-test_omit_state_vars_false (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves problem_6_2b_adj with ... /opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:10: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  _nlv = LooseVersion(_np_version)
-/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:11: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  np_version_under1p17 = _nlv < LooseVersion("1.17")
-/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:12: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  np_version_under1p18 = _nlv < LooseVersion("1.18")
-/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:13: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  _np_version_under1p19 = _nlv < LooseVersion("1.19")
-/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:14: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  _np_version_under1p20 = _nlv < LooseVersion("1.20")
-/opt/anaconda3/lib/python3.8/site-packages/setuptools/_distutils/version.py:337: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/function.py:120: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(__version__) >= LooseVersion("1.17.0"):
-/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/_optional.py:116: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if distutils.version.LooseVersion(version) < minimum_version:
-ok
-test_omit_state_vars_false_rosling (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves rosling_figure_1 with ... ok
-test_omit_state_vars_true (tests.test_instances.SaveInstance)
-Test that save_instance() correctly saves problem_6_2b_adj with ... ok
-test_multisource_IS (tests.test_issues.TestIssue171)
-Test that inbound shipments are recorded in the correct period from both suppliers. ...   0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1135.98it/s]
-ok
-test_multisource_orders (tests.test_issues.TestIssue171)
-Test that total order quantity is correct across suppliers. ...   0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1191.46it/s]
-ok
-test_lognormal (tests.test_loss_functions.TestContinuousLoss)
-Test that continuous_loss function correctly calculates n and n_bar ... ok
-test_normal (tests.test_loss_functions.TestContinuousLoss)
-Test that continuous_loss function correctly calculates n and n_bar ... ok
-test_gamma (tests.test_loss_functions.TestContinuousSecondLoss)
-Test that continuous_second_loss function correctly calculates n2 and n2_bar ... ok
-test_normal (tests.test_loss_functions.TestContinuousSecondLoss)
-Test that continuous_second_loss function correctly calculates n2 and n2_bar ... ok
-test_geometric (tests.test_loss_functions.TestDiscreteLoss)
-Test that discrete_loss function correctly calculates n and n_bar ... ok
-test_no_distrib (tests.test_loss_functions.TestDiscreteLoss)
-Test that discrete_loss function correctly raises exception if ... ok
-test_pmf (tests.test_loss_functions.TestDiscreteLoss)
-Test that discrete_loss function correctly calculates n and n_bar ... ok
-test_poisson (tests.test_loss_functions.TestDiscreteLoss)
-Test that discrete_loss function correctly calculates n and n_bar ... ok
-test_geometric (tests.test_loss_functions.TestDiscreteSecondLoss)
-Test that discrete_second_loss function correctly calculates n and n_bar ... ok
-test_no_distrib (tests.test_loss_functions.TestDiscreteSecondLoss)
-Test that discrete_second_loss function correctly raises exception if ... ok
-test_pmf (tests.test_loss_functions.TestDiscreteSecondLoss)
-Test that discrete_second_loss function correctly calculates n and n_bar ... ok
-test_poisson (tests.test_loss_functions.TestDiscreteSecondLoss)
-Test that discrete_second_loss function correctly calculates n and n_bar ... ok
-test (tests.test_loss_functions.TestExponentialLoss)
-Test that exponential_loss function correctly calculates n and n_bar for ... ok
-test_negative_x (tests.test_loss_functions.TestExponentialLoss)
-Test that exponential_loss correctly raises exception if x < 0. ... 
+Test that load_instance() correctly loads Example 6.1. ... 
 module : test_helpers   class : TestIsContinuousDistribution   function : test_frozen_continuous()      
 module : test_helpers   class : TestIsContinuousDistribution   function : test_frozen_discrete()        
 module : test_helpers   class : TestIsDict                     function : test_dict()                   
@@ -892,6 +822,961 @@ module : test_helpers   class : TestSortNestedDictByKeys       function : test_a
 module : test_helpers   class : TestSumOfDiscretesDistribution function : test_sum_of_discretes_distribution()
 module : test_instances   class : LoadInstance                   function : test_example_6_1()            
 module : test_instances   class : LoadInstance                   function : test_example_6_1()            
+Loaded instance:
+{'_nodes': [{'_index': 3,
+             'name': None,
+             'network': None,
+             '_product_indices': [-6],
+             '_dummy_product': -6,
+             '_external_supplier_dummy_product': -7,
+             '_predecessor_indices': [],
+             '_successor_indices': [2],
+             'local_holding_cost': 2,
+             'echelon_holding_cost': 2,
+             'additional_holding_cost': None,
+             'local_holding_cost_function': None,
+             'in_transit_holding_cost': None,
+             'fixed_cost': None,
+             'stockout_cost': 0,
+             'stockout_cost_function': None,
+             'revenue': None,
+             'shipment_lead_time': 2,
+             'order_lead_time': None,
+             'demand_source': {'type': None,
+                               'mean': None,
+                               'standard_deviation': None,
+                               'demand_list': None,
+                               'probabilities': None,
+                               'lo': None,
+                               'hi': None,
+                               'n': None,
+                               'p': None,
+                               'round_to_int': None,
+                               'dict_type': 'singleton_attribute'},
+             'initial_inventory_level': None,
+             'initial_orders': None,
+             'initial_shipments': None,
+             '_inventory_policy': {'type': 'BS',
+                                   'node': 3,
+                                   'product': None,
+                                   'base_stock_level': 10.69,
+                                   'order_quantity': None,
+                                   'reorder_point': None,
+                                   'order_up_to_level': None,
+                                   'dict_type': 'singleton_attribute'},
+             'supply_type': 'U',
+             'disruption_process': {'random_process_type': None,
+                                    'disruption_type': 'OP',
+                                    'disruption_probability': None,
+                                    'recovery_probability': None,
+                                    'disruption_state_list': None,
+                                    'disrupted': False,
+                                    'dict_type': 'singleton_attribute'},
+             'order_capacity': None,
+             'inventory_capacity': None,
+             'inventory_capacity_type': None,
+             'processing_time': None,
+             'external_inbound_cst': None,
+             'external_outbound_cst': None,
+             'demand_bound_constant': None,
+             'units_required': None,
+             'original_label': None,
+             'net_demand_mean': None,
+             'net_demand_standard_deviation': None,
+             'larger_adjacent_node': None,
+             'larger_adjacent_node_is_downstream': None,
+             'max_replenishment_time': None,
+             'state_vars': []},
+            {'_index': 2,
+             'name': None,
+             'network': None,
+             '_product_indices': [-4],
+             '_dummy_product': -4,
+             '_external_supplier_dummy_product': -5,
+             '_predecessor_indices': [3],
+             '_successor_indices': [1],
+             'local_holding_cost': 4,
+             'echelon_holding_cost': 2,
+             'additional_holding_cost': None,
+             'local_holding_cost_function': None,
+             'in_transit_holding_cost': None,
+             'fixed_cost': None,
+             'stockout_cost': 0,
+             'stockout_cost_function': None,
+             'revenue': None,
+             'shipment_lead_time': 1,
+             'order_lead_time': None,
+             'demand_source': {'type': None,
+                               'mean': None,
+                               'standard_deviation': None,
+                               'demand_list': None,
+                               'probabilities': None,
+                               'lo': None,
+                               'hi': None,
+                               'n': None,
+                               'p': None,
+                               'round_to_int': None,
+                               'dict_type': 'singleton_attribute'},
+             'initial_inventory_level': None,
+             'initial_orders': None,
+             'initial_shipments': None,
+             '_inventory_policy': {'type': 'BS',
+                                   'node': 2,
+                                   'product': None,
+                                   'base_stock_level': 5.53,
+                                   'order_quantity': None,
+                                   'reorder_point': None,
+                                   'order_up_to_level': None,
+                                   'dict_type': 'singleton_attribute'},
+             'supply_type': None,
+             'disruption_process': {'random_process_type': None,
+                                    'disruption_type': 'OP',
+                                    'disruption_probability': None,
+                                    'recovery_probability': None,
+                                    'disruption_state_list': None,
+                                    'disrupted': False,
+                                    'dict_type': 'singleton_attribute'},
+             'order_capacity': None,
+             'inventory_capacity': None,
+             'inventory_capacity_type': None,
+             'processing_time': None,
+             'external_inbound_cst': None,
+             'external_outbound_cst': None,
+             'demand_bound_constant': None,
+             'units_required': None,
+             'original_label': None,
+             'net_demand_mean': None,
+             'net_demand_standard_deviation': None,
+             'larger_adjacent_node': None,
+             'larger_adjacent_node_is_downstream': None,
+             'max_replenishment_time': None,
+             'state_vars': []},
+            {'_index': 1,
+             'name': None,
+             'network': None,
+             '_product_indices': [-2],
+             '_dummy_product': -2,
+             '_external_supplier_dummy_product': -3,
+             '_predecessor_indices': [2],
+             '_successor_indices': [],
+             'local_holding_cost': 7,
+             'echelon_holding_cost': 3,
+             'additional_holding_cost': None,
+             'local_holding_cost_function': None,
+             'in_transit_holding_cost': None,
+             'fixed_cost': None,
+             'stockout_cost': 37.12,
+             'stockout_cost_function': None,
+             'revenue': None,
+             'shipment_lead_time': 1,
+             'order_lead_time': None,
+             'demand_source': {'type': 'N',
+                               'mean': 5,
+                               'standard_deviation': 1,
+                               'demand_list': None,
+                               'probabilities': None,
+                               'lo': None,
+                               'hi': None,
+                               'n': None,
+                               'p': None,
+                               'round_to_int': None,
+                               'dict_type': 'singleton_attribute'},
+             'initial_inventory_level': None,
+             'initial_orders': None,
+             'initial_shipments': None,
+             '_inventory_policy': {'type': 'BS',
+                                   'node': 1,
+                                   'product': None,
+                                   'base_stock_level': 6.49,
+                                   'order_quantity': None,
+                                   'reorder_point': None,
+                                   'order_up_to_level': None,
+                                   'dict_type': 'singleton_attribute'},
+             'supply_type': None,
+             'disruption_process': {'random_process_type': None,
+                                    'disruption_type': 'OP',
+                                    'disruption_probability': None,
+                                    'recovery_probability': None,
+                                    'disruption_state_list': None,
+                                    'disrupted': False,
+                                    'dict_type': 'singleton_attribute'},
+             'order_capacity': None,
+             'inventory_capacity': None,
+             'inventory_capacity_type': None,
+             'processing_time': None,
+             'external_inbound_cst': None,
+             'external_outbound_cst': None,
+             'demand_bound_constant': None,
+             'units_required': None,
+             'original_label': None,
+             'net_demand_mean': None,
+             'net_demand_standard_deviation': None,
+             'larger_adjacent_node': None,
+             'larger_adjacent_node_is_downstream': None,
+             'max_replenishment_time': None,
+             'state_vars': []}],
+ '_products': [{'_index': -6,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -7,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -4,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -5,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -2,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -3,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []}],
+ '_local_product_indices': [],
+ '_period': 0,
+ 'max_max_replenishment_time': None}
+
+Correct instance:
+{'_nodes': [{'_index': 3,
+             'name': None,
+             'network': None,
+             '_product_indices': [-6],
+             '_dummy_product': -6,
+             '_external_supplier_dummy_product': -7,
+             '_predecessor_indices': [],
+             '_successor_indices': [2],
+             'local_holding_cost': 2,
+             'echelon_holding_cost': 2,
+             'additional_holding_cost': None,
+             'local_holding_cost_function': None,
+             'in_transit_holding_cost': None,
+             'fixed_cost': None,
+             'stockout_cost': 0,
+             'stockout_cost_function': None,
+             'revenue': None,
+             'shipment_lead_time': 2,
+             'order_lead_time': None,
+             'demand_source': {'type': None,
+                               'mean': None,
+                               'standard_deviation': None,
+                               'demand_list': None,
+                               'probabilities': None,
+                               'lo': None,
+                               'hi': None,
+                               'n': None,
+                               'p': None,
+                               'round_to_int': None,
+                               'dict_type': 'singleton_attribute'},
+             'initial_inventory_level': None,
+             'initial_orders': None,
+             'initial_shipments': None,
+             '_inventory_policy': {'type': 'BS',
+                                   'node': 3,
+                                   'product': None,
+                                   'base_stock_level': 10.69,
+                                   'order_quantity': None,
+                                   'reorder_point': None,
+                                   'order_up_to_level': None,
+                                   'dict_type': 'singleton_attribute'},
+             'supply_type': 'U',
+             'disruption_process': {'random_process_type': None,
+                                    'disruption_type': 'OP',
+                                    'disruption_probability': None,
+                                    'recovery_probability': None,
+                                    'disruption_state_list': None,
+                                    'disrupted': False,
+                                    'dict_type': 'singleton_attribute'},
+             'order_capacity': None,
+             'inventory_capacity': None,
+             'inventory_capacity_type': None,
+             'processing_time': None,
+             'external_inbound_cst': None,
+             'external_outbound_cst': None,
+             'demand_bound_constant': None,
+             'units_required': None,
+             'original_label': None,
+             'net_demand_mean': None,
+             'net_demand_standard_deviation': None,
+             'larger_adjacent_node': None,
+             'larger_adjacent_node_is_downstream': None,
+             'max_replenishment_time': None,
+             'state_vars': []},
+            {'_index': 2,
+             'name': None,
+             'network': None,
+             '_product_indices': [-4],
+             '_dummy_product': -4,
+             '_external_supplier_dummy_product': -5,
+             '_predecessor_indices': [3],
+             '_successor_indices': [1],
+             'local_holding_cost': 4,
+             'echelon_holding_cost': 2,
+             'additional_holding_cost': None,
+             'local_holding_cost_function': None,
+             'in_transit_holding_cost': None,
+             'fixed_cost': None,
+             'stockout_cost': 0,
+             'stockout_cost_function': None,
+             'revenue': None,
+             'shipment_lead_time': 1,
+             'order_lead_time': None,
+             'demand_source': {'type': None,
+                               'mean': None,
+                               'standard_deviation': None,
+                               'demand_list': None,
+                               'probabilities': None,
+                               'lo': None,
+                               'hi': None,
+                               'n': None,
+                               'p': None,
+                               'round_to_int': None,
+                               'dict_type': 'singleton_attribute'},
+             'initial_inventory_level': None,
+             'initial_orders': None,
+             'initial_shipments': None,
+             '_inventory_policy': {'type': 'BS',
+                                   'node': 2,
+                                   'product': None,
+                                   'base_stock_level': 5.53,
+                                   'order_quantity': None,
+                                   'reorder_point': None,
+                                   'order_up_to_level': None,
+                                   'dict_type': 'singleton_attribute'},
+             'supply_type': None,
+             'disruption_process': {'random_process_type': None,
+                                    'disruption_type': 'OP',
+                                    'disruption_probability': None,
+                                    'recovery_probability': None,
+                                    'disruption_state_list': None,
+                                    'disrupted': False,
+                                    'dict_type': 'singleton_attribute'},
+             'order_capacity': None,
+             'inventory_capacity': None,
+             'inventory_capacity_type': None,
+             'processing_time': None,
+             'external_inbound_cst': None,
+             'external_outbound_cst': None,
+             'demand_bound_constant': None,
+             'units_required': None,
+             'original_label': None,
+             'net_demand_mean': None,
+             'net_demand_standard_deviation': None,
+             'larger_adjacent_node': None,
+             'larger_adjacent_node_is_downstream': None,
+             'max_replenishment_time': None,
+             'state_vars': []},
+            {'_index': 1,
+             'name': None,
+             'network': None,
+             '_product_indices': [-2],
+             '_dummy_product': -2,
+             '_external_supplier_dummy_product': -3,
+             '_predecessor_indices': [2],
+             '_successor_indices': [],
+             'local_holding_cost': 7,
+             'echelon_holding_cost': 3,
+             'additional_holding_cost': None,
+             'local_holding_cost_function': None,
+             'in_transit_holding_cost': None,
+             'fixed_cost': None,
+             'stockout_cost': 37.12,
+             'stockout_cost_function': None,
+             'revenue': None,
+             'shipment_lead_time': 1,
+             'order_lead_time': None,
+             'demand_source': {'type': 'N',
+                               'mean': 5,
+                               'standard_deviation': 1,
+                               'demand_list': None,
+                               'probabilities': None,
+                               'lo': None,
+                               'hi': None,
+                               'n': None,
+                               'p': None,
+                               'round_to_int': None,
+                               'dict_type': 'singleton_attribute'},
+             'initial_inventory_level': None,
+             'initial_orders': None,
+             'initial_shipments': None,
+             '_inventory_policy': {'type': 'BS',
+                                   'node': 1,
+                                   'product': None,
+                                   'base_stock_level': 6.49,
+                                   'order_quantity': None,
+                                   'reorder_point': None,
+                                   'order_up_to_level': None,
+                                   'dict_type': 'singleton_attribute'},
+             'supply_type': None,
+             'disruption_process': {'random_process_type': None,
+                                    'disruption_type': 'OP',
+                                    'disruption_probability': None,
+                                    'recovery_probability': None,
+                                    'disruption_state_list': None,
+                                    'disrupted': False,
+                                    'dict_type': 'singleton_attribute'},
+             'order_capacity': None,
+             'inventory_capacity': None,
+             'inventory_capacity_type': None,
+             'processing_time': None,
+             'external_inbound_cst': None,
+             'external_outbound_cst': None,
+             'demand_bound_constant': None,
+             'units_required': None,
+             'original_label': None,
+             'net_demand_mean': None,
+             'net_demand_standard_deviation': None,
+             'larger_adjacent_node': None,
+             'larger_adjacent_node_is_downstream': None,
+             'max_replenishment_time': None,
+             'state_vars': []}],
+ '_products': [{'_index': -6,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -7,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -4,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -5,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': Noneok
+test_example_9_5 (tests.test_instances.LoadInstance)
+Test that load_instance() correctly loads Example 9.5. ... ok
+test_figure_6_14 (tests.test_instances.LoadInstance)
+Test that load_instance() correctly loads Figure 6.14. ... ok
+test_example_4_2 (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves Example 6.1. ... ok
+test_example_6_1 (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves Example 6.1. ... ok
+test_example_6_1_with_order_capacity (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves Example 6.1 with a few order capacities. ... ok
+test_example_9_5 (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves Example 9.5. ... ok
+test_figure_6_14 (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves Figure 6.14. ... ok
+test_omit_state_vars_false (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves problem_6_2b_adj with ... /opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:10: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  _nlv = LooseVersion(_np_version)
+/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:11: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  np_version_under1p17 = _nlv < LooseVersion("1.17")
+/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:12: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  np_version_under1p18 = _nlv < LooseVersion("1.18")
+/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:13: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  _np_version_under1p19 = _nlv < LooseVersion("1.19")
+/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py:14: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  _np_version_under1p20 = _nlv < LooseVersion("1.20")
+/opt/anaconda3/lib/python3.8/site-packages/setuptools/_distutils/version.py:337: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/numpy/function.py:120: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(__version__) >= LooseVersion("1.17.0"):
+/opt/anaconda3/lib/python3.8/site-packages/pandas/compat/_optional.py:116: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if distutils.version.LooseVersion(version) < minimum_version:
+ok
+test_omit_state_vars_false_rosling (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves rosling_figure_1 with ... ok
+test_omit_state_vars_true (tests.test_instances.SaveInstance)
+Test that save_instance() correctly saves problem_6_2b_adj with ... ok
+test_multisource_IS (tests.test_issues.TestIssue171)
+Test that inbound shipments are recorded in the correct period from both suppliers. ...   0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1007.51it/s]
+ok
+test_multisource_orders (tests.test_issues.TestIssue171)
+Test that total order quantity is correct across suppliers. ...   0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1022.19it/s]
+ok
+test_lognormal (tests.test_loss_functions.TestContinuousLoss)
+Test that continuous_loss function correctly calculates n and n_bar ... ok
+test_normal (tests.test_loss_functions.TestContinuousLoss)
+Test that continuous_loss function correctly calculates n and n_bar ... ok
+test_gamma (tests.test_loss_functions.TestContinuousSecondLoss)
+Test that continuous_second_loss function correctly calculates n2 and n2_bar ... ok
+test_normal (tests.test_loss_functions.TestContinuousSecondLoss)
+Test that continuous_second_loss function correctly calculates n2 and n2_bar ... ok
+test_geometric (tests.test_loss_functions.TestDiscreteLoss)
+Test that discrete_loss function correctly calculates n and n_bar ... ok
+test_no_distrib (tests.test_loss_functions.TestDiscreteLoss)
+Test that discrete_loss function correctly raises exception if ... ok
+test_pmf (tests.test_loss_functions.TestDiscreteLoss)
+Test that discrete_loss function correctly calculates n and n_bar ... ok
+test_poisson (tests.test_loss_functions.TestDiscreteLoss)
+Test that discrete_loss function correctly calculates n and n_bar ... ok
+test_geometric (tests.test_loss_functions.TestDiscreteSecondLoss)
+Test that discrete_second_loss function correctly calculates n and n_bar ... ok
+test_no_distrib (tests.test_loss_functions.TestDiscreteSecondLoss)
+Test that discrete_second_loss function correctly raises exception if ... ok
+test_pmf (tests.test_loss_functions.TestDiscreteSecondLoss)
+Test that discrete_second_loss function correctly calculates n and n_bar ... ok
+test_poisson (tests.test_loss_functions.TestDiscreteSecondLoss)
+Test that discrete_second_loss function correctly calculates n and n_bar ... ok
+test (tests.test_loss_functions.TestExponentialLoss)
+Test that exponential_loss function correctly calculates n and n_bar for ... ok
+test_negative_x (tests.test_loss_functions.TestExponentialLoss)
+Test that exponential_loss correctly raises exception if x < 0. ... ,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -2,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []},
+               {'_index': -3,
+                'name': None,
+                'network': None,
+                'is_dummy': True,
+                '_bill_of_materials': {},
+                'local_holding_cost': None,
+                'echelon_holding_cost': None,
+                'local_holding_cost_function': None,
+                'additional_holding_cost': None,
+                'in_transit_holding_cost': None,
+                'stockout_cost': None,
+                'fixed_cost': None,
+                'stockout_cost_function': None,
+                'revenue': None,
+                'shipment_lead_time': None,
+                'order_lead_time': None,
+                'demand_source': {'type': None,
+                                  'mean': None,
+                                  'standard_deviation': None,
+                                  'demand_list': None,
+                                  'probabilities': None,
+                                  'lo': None,
+                                  'hi': None,
+                                  'n': None,
+                                  'p': None,
+                                  'round_to_int': None},
+                'initial_inventory_level': None,
+                'inventory_capacity': None,
+                'inventory_over_capacity': None,
+                'initial_orders': None,
+                'initial_shipments': None,
+                '_inventory_policy': {'type': None,
+                                      'node': None,
+                                      'product': None,
+                                      'base_stock_level': None,
+                                      'order_quantity': None,
+                                      'reorder_point': None,
+                                      'order_up_to_level': None},
+                'supply_type': None,
+                'order_capacity': None,
+                'state_vars': []}],
+ '_local_product_indices': [],
+ '_period': 0,
+ 'max_max_replenishment_time': None}
 module : test_instances   class : LoadInstance                   function : test_example_9_5()            
 module : test_instances   class : LoadInstance                   function : test_figure_6_14()            
 module : test_instances   class : SaveInstance                   function : test_example_6_1()            
@@ -1208,7 +2093,7 @@ Test that to_dict() and from_dict() correctly convert NodeStateVars object to an
 test_example_6_1_per_22 (tests.test_node_state_vars.TestNodeStateVarsToFromDict)
 Test that to_dict() and from_dict() correctly convert NodeStateVars object to and from dict ... ok
 test_165 (tests.test_node_state_vars.TestPreviousBugs)
-Test instance in issue #165 (Bug in sim with order lead time). ...   0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 841.54it/s]
+Test instance in issue #165 (Bug in sim with order lead time). ...   0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 709.88it/s]
 ok
 test_assembly_3_stage_per_22 (tests.test_node_state_vars.TestStateVariables)
 Test state variables for simulation of 3-node assembly system at end of period 22. ... ok
@@ -1397,7 +2282,7 @@ Test that r_q_cost_poisson() function correctly solves Problem 5.2. ... ok
 test_rong_atan_snyder_figure_1a_with_disruptions (tests.test_sim.TestBadBackorders)
 Test that simulation() function correctly simulates model from ... ok
 test_additional_holding_cost (tests.test_sim.TestCalculatePeriodCosts)
-Test that calculate_period_costs() accounts for additional holding cost for inventory over capacity. ... ok
+Test that calculate_period_costs() accounts for additional holding cost for inventory over capacity. ... ERROR
 test_assembly_3_stage (tests.test_sim.TestCalculatePeriodCosts)
 Test that _calculate_period_costs() correct calculates cost for simulation of 3-stage assembly model. ... ok
 test_example_4_7 (tests.test_sim.TestCalculatePeriodCosts)
@@ -1415,7 +2300,7 @@ Test that _calculate_period_costs() correct calculates cost for simulation of mo
 test_problem_6_2a (tests.test_sim.TestCalculatePeriodCosts)
 Test that _calculate_period_costs() correct calculates cost for simulation of model from ... ok
 test_production_shutdown (tests.test_sim.TestCalculatePeriodCosts)
-Test that setting inventory_capacity_type = 'PP' works correctly. ... ok
+Test that setting inventory_capacity_type = 'PP' works correctly. ... ERROR
 test_rosling_figure_1 (tests.test_sim.TestCalculatePeriodCosts)
 Test that _calculate_period_costs() correct calculates cost for simulation of model in Rosling (1989), ... ok
 test_single_stage (tests.test_sim.TestCalculatePeriodCosts)
@@ -1441,32 +2326,6 @@ Test that simulation() function correctly simulates 3-stage assembly model in wh
 module : test_rq   class : TestrQCostPoisson              function : test_problem_5_2()            
 module : test_sim   class : TestBadBackorders              function : test_rong_atan_snyder_figure_1a_with_disruptions()
 module : test_sim   class : TestAdditionalHoldingCost      function : test_additional_holding_cost  
-t    | i=0      IO:EXT    OQ:EXT    IS:EXT    IDI:EXT    OS:EXT         IL        HC        SC         TC
----  -------  --------  --------  --------  ---------  --------  ---------  --------  --------  ---------
-0    |         71.5132   71.5132    0               0   71.5132   0.846829  0.635122   0         0.635122
-1    |         59.8418   59.8418   71.5132          0   59.8418  12.5182    9.38866    0         9.38866
-2    |         73.4172   73.4172   59.8418          0   72.36    -1.05725   0          1.58587   1.58587
-3    |         76.2731   76.2731   73.4172          0   73.4172  -3.91313   0          5.86969   5.86969
-4    |         75.6809   75.6809   76.2731          0   76.2731  -3.32093   0          4.98139   4.98139
-...
-95   |         76.1932   76.1932   75.497           0   75.497   -3.83324   0          5.74987   5.74987
-96   |         73.0675   73.0675   76.1932          0   76.1932  -0.707464  0          1.0612    1.0612
-97   |         66.6129   66.6129   73.0675          0   67.3204   5.7471    4.31033    0         4.31033
-98   |         68.7687   68.7687   66.6129          0   68.7687   3.59127   2.69345    0         2.69345
-99   |         82.137    82.137    68.7687          0   72.36    -9.77699   0         14.6655   14.6655
-t    | i=0      IO:EXT    OQ:EXT    IS:EXT    IDI:EXT    OS:EXT         IL        HC        SC         TC
----  -------  --------  --------  --------  ---------  --------  ---------  --------  --------  ---------
-0    |         71.5132   71.5132    0               0   71.5132   0.846829  0.635122   0         0.635122
-1    |         59.8418   59.8418   71.5132          0   59.8418  12.5182    9.38866    0         9.38866
-2    |         73.4172   73.4172   59.8418          0   72.36    -1.05725   0          1.58587   1.58587
-3    |         76.2731   76.2731   73.4172          0   73.4172  -3.91313   0          5.86969   5.86969
-4    |         75.6809   75.6809   76.2731          0   76.2731  -3.32093   0          4.98139   4.98139
-...
-95   |         76.1932   76.1932   75.497           0   75.497   -3.83324   0          5.74987   5.74987
-96   |         73.0675   73.0675   76.1932          0   76.1932  -0.707464  0          1.0612    1.0612
-97   |         66.6129   66.6129   73.0675          0   67.3204   5.7471    4.31033    0         4.31033
-98   |         68.7687   68.7687   66.6129          0   68.7687   3.59127   2.69345    0         2.69345
-99   |         82.137    82.137    68.7687          0   72.36    -9.77699   0         14.6655   14.6655
 module : test_sim   class : TestCalculatePeriodCosts       function : test_assembly_3_stage()       
 module : test_sim   class : TestCalculatePeriodCosts       function : test_example_4_7              
 module : test_sim   class : TestCalculatePeriodCosts       function : test_example_6_1()            
@@ -1476,19 +2335,6 @@ module : test_sim   class : TestCalculatePeriodCosts       function : test_probl
 module : test_sim   class : TestCalculatePeriodCosts       function : test_problem_6_16()           
 module : test_sim   class : TestCalculatePeriodCosts       function : test_problem_6_2a()           
 module : test_sim   class : TestProductionShutdown         function : test_production_shutdown      
-t    | i=0      IO:EXT    OQ:EXT    IS:EXT    IDI:EXT      OS:EXT          IL        HC         SC          TC
----  -------  --------  --------  --------  ---------  ----------  ----------  --------  ---------  ----------
-0    |         71.5132    0         0               0   71.5132      0.846829  0.635122    0          0.635122
-1    |         59.8418  131.355     0               0    0.846829  -58.995     0          88.4924    88.4924
-2    |         73.4172   73.4172  131.355           0  131.355      -1.05725   0           1.58587    1.58587
-3    |         76.2731   76.2731   73.4172          0   73.4172     -3.91313   0           5.86969    5.86969
-4    |         75.6809   75.6809   76.2731          0   76.2731     -3.32093   0           4.98139    4.98139
-...
-95   |         76.1932  151.69      0               0    0         -79.3302    0         118.995    118.995
-96   |         73.0675   73.0675  151.69            0  151.69       -0.707464  0           1.0612     1.0612
-97   |         66.6129   66.6129   73.0675          0   67.3204      5.7471    4.31033     0          4.31033
-98   |         68.7687    0        66.6129          0   68.7687      3.59127   2.69345     0          2.69345
-99   |         82.137   150.906     0               0    3.59127   -78.5457    0         117.819    117.819
 module : test_sim   class : TestCalculatePeriodCosts       function : test_rosling_figure_1()       
 module : test_sim   class : TestCalculatePeriodCosts       function : test_single_stage()           
 module : test_sim   class : TestConsistencyChecks          function : test_assembly_3_stage_with_disruptions()
@@ -2430,19 +3276,19 @@ Test mwor_system() to build 4-node MWOR system, indexed ... ok
 test_4_node_mwor_index_list (tests.test_supply_chain_network.TestMWORSystem)
 Test mwor_system() to build 4-node MWOR system, with index list ... ok
 test_4_node_1 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Test that network_from_edges() correctly builds the network defined in ... ERROR
+Test that network_from_edges() correctly builds the network defined in ... ok
 test_4_node_2 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Similar to test 1, but no node_indices provided. ... ERROR
+Similar to test 1, but no node_indices provided. ... ok
 test_4_node_3 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Similar to test 1, but with out-of-order index list. ... ERROR
+Similar to test 1, but with out-of-order index list. ... ok
 test_4_node_4 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Similar to test 1, but with various ways of providing data. Also add ... ERROR
+Similar to test 1, but with various ways of providing data. Also add ... ok
 test_demand_source (tests.test_supply_chain_network.TestNetworkFromEdges)
-Test different ways to specify demand_source. ... ERROR
+Test different ways to specify demand_source. ... ok
 test_list_params (tests.test_supply_chain_network.TestNetworkFromEdges)
-Test that network_from_edges() correctly builds the network defined in ... ERROR
+Test that network_from_edges() correctly builds the network defined in ... FAIL
 test_single_node (tests.test_supply_chain_network.TestNetworkFromEdges)
-Test network_from_edges() for building a single-node network. ... ERROR
+Test network_from_edges() for building a single-node network. ... FAIL
 test_3_node_serial (tests.test_supply_chain_network.TestNetworkxDigraph)
 Test networkx_digraph() for 3-node serial system. ... ok
 test_4_node_owmr (tests.test_supply_chain_network.TestNetworkxDigraph)
@@ -2904,109 +3750,61 @@ test_vector_lengths (tests.test_wagner_whitin.TestWagnerWhitin)
 Test that wagner_whitin function works with various lengths of input ... ok
 
 ======================================================================
-ERROR: test_4_node_1 (tests.test_supply_chain_network.TestNetworkFromEdges)
+ERROR: test_additional_holding_cost (tests.test_sim.TestCalculatePeriodCosts)
+Test that calculate_period_costs() accounts for additional holding cost for inventory over capacity.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_sim.py", line 1579, in test_additional_holding_cost
+    _ = simulation(network, 100, rand_seed=17, progress_bar=False, consistency_checks='E')
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 116, in simulation
+    step(network=network, consistency_checks=consistency_checks)
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 264, in step
+    _generate_downstream_shipments(n.index, network, t, visited, consistency_checks=consistency_checks)
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 511, in _generate_downstream_shipments
+    _process_outbound_shipments(node, starting_inventory_level, new_finished_goods,
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 1054, in _process_outbound_shipments
+    node.state_vars_current.excess_inventory[prod_index] = (max(0, node.state_vars_current.inventory_level[prod_index] \
+TypeError: unsupported operand type(s) for -: 'float' and 'InventoryCapacity'
+
+======================================================================
+ERROR: test_production_shutdown (tests.test_sim.TestCalculatePeriodCosts)
+Test that setting inventory_capacity_type = 'PP' works correctly.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_sim.py", line 1710, in test_production_shutdown
+    _ = simulation(network, 100, rand_seed=17, progress_bar=False, consistency_checks='E')
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 116, in simulation
+    step(network=network, consistency_checks=consistency_checks)
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 264, in step
+    _generate_downstream_shipments(n.index, network, t, visited, consistency_checks=consistency_checks)
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 511, in _generate_downstream_shipments
+    _process_outbound_shipments(node, starting_inventory_level, new_finished_goods,
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/sim.py", line 1054, in _process_outbound_shipments
+    node.state_vars_current.excess_inventory[prod_index] = (max(0, node.state_vars_current.inventory_level[prod_index] \
+TypeError: unsupported operand type(s) for -: 'float' and 'InventoryCapacity'
+
+======================================================================
+FAIL: test_list_params (tests.test_supply_chain_network.TestNetworkFromEdges)
 Test that network_from_edges() correctly builds the network defined in
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1326, in test_4_node_1
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1574, in test_list_params
     self.assertTrue(network.deep_equal_to(correct_network))
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_network.py", line 300, in deep_equal_to
-    elif not self.nodes_by_index[n_ind].deep_equal_to(other_node, rel_tol=rel_tol):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_node.py", line 1680, in deep_equal_to
-    elif not isclose(self_attr or 0, other_attr or 0, rel_tol=rel_tol):
-TypeError: must be real number, not InventoryCapacity
+AssertionError: False is not true
 
 ======================================================================
-ERROR: test_4_node_2 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Similar to test 1, but no node_indices provided.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1359, in test_4_node_2
-    self.assertTrue(network.deep_equal_to(correct_network))
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_network.py", line 300, in deep_equal_to
-    elif not self.nodes_by_index[n_ind].deep_equal_to(other_node, rel_tol=rel_tol):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_node.py", line 1680, in deep_equal_to
-    elif not isclose(self_attr or 0, other_attr or 0, rel_tol=rel_tol):
-TypeError: must be real number, not InventoryCapacity
-
-======================================================================
-ERROR: test_4_node_3 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Similar to test 1, but with out-of-order index list.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1394, in test_4_node_3
-    self.assertTrue(network.deep_equal_to(correct_network))
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_network.py", line 300, in deep_equal_to
-    elif not self.nodes_by_index[n_ind].deep_equal_to(other_node, rel_tol=rel_tol):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_node.py", line 1680, in deep_equal_to
-    elif not isclose(self_attr or 0, other_attr or 0, rel_tol=rel_tol):
-TypeError: must be real number, not InventoryCapacity
-
-======================================================================
-ERROR: test_4_node_4 (tests.test_supply_chain_network.TestNetworkFromEdges)
-Similar to test 1, but with various ways of providing data. Also add
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1441, in test_4_node_4
-    self.assertTrue(network.deep_equal_to(correct_network))
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_network.py", line 300, in deep_equal_to
-    elif not self.nodes_by_index[n_ind].deep_equal_to(other_node, rel_tol=rel_tol):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_node.py", line 1680, in deep_equal_to
-    elif not isclose(self_attr or 0, other_attr or 0, rel_tol=rel_tol):
-TypeError: must be real number, not InventoryCapacity
-
-======================================================================
-ERROR: test_demand_source (tests.test_supply_chain_network.TestNetworkFromEdges)
-Test different ways to specify demand_source.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1474, in test_demand_source
-    self.assertTrue(network.deep_equal_to(correct_network))
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_network.py", line 300, in deep_equal_to
-    elif not self.nodes_by_index[n_ind].deep_equal_to(other_node, rel_tol=rel_tol):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_node.py", line 1680, in deep_equal_to
-    elif not isclose(self_attr or 0, other_attr or 0, rel_tol=rel_tol):
-TypeError: must be real number, not InventoryCapacity
-
-======================================================================
-ERROR: test_list_params (tests.test_supply_chain_network.TestNetworkFromEdges)
-Test that network_from_edges() correctly builds the network defined in
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1586, in test_list_params
-    correct_network.nodes_by_index[1].inventory_capacity = InventoryCapacity(inventory_capacity_type = 'HC')
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/inventory_capacity.py", line 96, in __init__
-    self.validate_parameters()
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/inventory_capacity.py", line 241, in validate_parameters
-    if self.inventory_capacity_type == 'HC' and self.additional_holding_cost is None: raise AttributeError("additional_holding_cost not provided")
-AttributeError: additional_holding_cost not provided
-
-======================================================================
-ERROR: test_single_node (tests.test_supply_chain_network.TestNetworkFromEdges)
+FAIL: test_single_node (tests.test_supply_chain_network.TestNetworkFromEdges)
 Test network_from_edges() for building a single-node network.
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1550, in test_single_node
+  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_supply_chain_network.py", line 1515, in test_single_node
     self.assertTrue(network.deep_equal_to(correct_network))
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_network.py", line 300, in deep_equal_to
-    elif not self.nodes_by_index[n_ind].deep_equal_to(other_node, rel_tol=rel_tol):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/src/stockpyl/supply_chain_node.py", line 1680, in deep_equal_to
-    elif not isclose(self_attr or 0, other_attr or 0, rel_tol=rel_tol):
-TypeError: must be real number, not InventoryCapacity
-
-======================================================================
-FAIL: test_example_6_1 (tests.test_instances.LoadInstance)
-Test that load_instance() correctly loads Example 6.1.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/Users/layansuleiman/Desktop/Spring2026RA/stockpyl/tests/test_instances.py", line 109, in test_example_6_1
-    self.assertTrue(instance.deep_equal_to(correct_instance))
 AssertionError: False is not true
 
 ----------------------------------------------------------------------
-Ran 754 tests in 43.938s
+Ran 754 tests in 50.809s
 
-FAILED (failures=1, errors=7, skipped=10)
+FAILED (failures=2, errors=2, skipped=10)
 
 module : test_supply_chain_node   class : TestValidateRawMaterial        function : test_multiproduct_5_7()       
 module : test_supply_chain_node   class : TestValidateSuccessor          function : test_bad_param()              

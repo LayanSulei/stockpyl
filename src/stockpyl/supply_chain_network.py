@@ -1149,19 +1149,19 @@ def network_from_edges(edges, node_order_in_lists=None, **kwargs):
 			n.disruption_process = dp
 
 		#capacity type
-		if data_dict[n.index].get('inventory_capacity_type') is not None:
-			n.inventory_capacity_type = data_dict[n.index]['inventory_capacity_type']
-		else:
-			# Create InventoryCapacity object. 
+		if data_dict[n.index].get('inventory_capacity') is not None:
 			ic = InventoryCapacity()
 			ic.inventory_capacity_type = data_dict[n.index].get('inventory_capacity_type')
 			ic.inventory_capacity = data_dict[n.index].get('inventory_capacity')
-			dp.additional_holding_cost = data_dict[n.index].get('additional_holding_cost')
+			ic.additional_holding_cost = data_dict[n.index].get('additional_holding_cost')
 			if data_dict[n.index].get('over_capacity') is not None:
-				dp.disrupted = data_dict[n.index].get('over_capacity')
+				ic.over_capacity = data_dict[n.index].get('over_capacity')
 			if data_dict[n.index].get('shutdown') is not None:
-				dp.disrupted = data_dict[n.index].get('shutdown')
-			n.inventory_capacity_type = ic
+				ic.shutdown = data_dict[n.index].get('shutdown')
+			n.inventory_capacity = ic
+		
+		else:
+			n.inventory_capacity = None
 		
 		# Supply type.
 		if not n.predecessors():

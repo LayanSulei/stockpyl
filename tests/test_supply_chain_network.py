@@ -1545,11 +1545,9 @@ class TestNetworkFromEdges(unittest.TestCase):
 		)
 		correct_network.nodes_by_index[3].demand_source = DemandSource(type=None)
 		correct_network.nodes_by_index[4].demand_source = DemandSource(type=None)
-		correct_network.nodes_by_index[1].inventory_capacity = InventoryCapacity(inventory_capacity = 5)
+		correct_network.nodes_by_index[1].inventory_capacity = InventoryCapacity(inventory_capacity = 5, inventory_capacity_type = 'HC', additional_holding_cost = 1)
 		correct_network.nodes_by_index[2].inventory_capacity = InventoryCapacity(inventory_capacity = 5)
 		correct_network.nodes_by_index[3].inventory_capacity = InventoryCapacity(inventory_capacity = 5)
-		correct_network.nodes_by_index[1].inventory_capacity = InventoryCapacity(inventory_capacity_type = 'HC')
-
 
 		network = network_from_edges(
 			edges=[(3, 1), (3, 2), (4, 1)],

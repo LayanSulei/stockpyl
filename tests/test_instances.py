@@ -105,24 +105,13 @@ class LoadInstance(unittest.TestCase):
 			base_stock_level={1: 6.49, 2: 5.53, 3: 10.69}
 		)
 
-		# Fixed cost was not implemented when this test was created, so it is not included in the correct JSON. 
-		# Remove it from the saved JSON to allow the dicts to compare equal.
-		# TODO: Update the correct JSON to include fixed cost and remove this code.
-		keys_to_remove = [
-    			'fixed_cost',
-    			'inventory_capacity',
-    			'inventory_capacity_type',
-    			'inventory_over_capacity',
-    			'additional_holding_cost'
-			]
+		import pprint
 
-		for node_dict in saved_json['instances'][0]['data']['_nodes']:
-			for key in keys_to_remove:
-				node_dict.pop(key, None)
-		for product_dict in saved_json['instances'][0]['data']['_products']:
-			for key in keys_to_remove:
-				product_dict.pop(key, None)
+		print("Loaded instance:")
+		pprint.pp(instance.to_dict())
 
+		print("\nCorrect instance:")
+		pprint.pp(correct_instance.to_dict())
 
 		# Compare.
 		self.assertTrue(instance.deep_equal_to(correct_instance))
